@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Home | Shuut</title>
+<link rel="icon" href="IMG_0317.JPG" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Simple.css">
+<script src="Sidebar.js"></script>
+<style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Roboto", sans-serif;
+    }
+    
+    .w3-sidebar {
+        z-index: 3;
+        width: 250px;
+        top: 43px;
+        bottom: 0;
+        height: inherit;
+    }
+</style>
+
+<body class="root w3-red">
+
+    <!-- Navbar -->
+
+    <div class="w3-bar">
+        <a href="\index.html" class="w3-bar-item w3-button w3-hide-small">Shuut</a>
+    </div>
+    <br>
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left w3-red" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <h2 class="w3-bar-item w3-text-white"><b>Herr Fuchs</b></h2>
+        <a class="w3-bar-item w3-button w3-grey" href="#">Home</a>
+        <a class="w3-bar-item w3-button w3-hover-grey" href="mailto:shuutdevelopers@onlineartgallery.xyz">Send Feedback</a>
+        <br>
+        <h4 class="w3-bar-item w3-text-white"><b>Recent Posts from Herr Fuchs</b></h4>
+        <h6 class="w3-bar-item w3-text-white">It's quiet... too quiet</h6>
+    </nav>
+    <div class="w3-main" style="margin-left:250px">
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h2 class="w3-text-white">Dogecoin Song</h2>
+                <h6 class="w3-text-white" id="Teacher">Herr Fuchs (Dogecoin)</h6>
+<video  src="\src/dogecoin.mp4" width="500" controls></video>
+                <p>Dogecoin Song - Herr Fuchs (Dogecoin)</p>
+                <div class="w3-bar">
+                    <button class="w3-red w3-button w3-small w3-round-xxlarge w3-border w3-border-grey w3-round-large"><a class="white" href="3.html">Watch on Shuut</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+  <div class="w3-main" style="margin-left:250px">
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+              <hr>
+                <h2 class="w3-text-teal">Elon Musk Song</h2>
+                <h6 class="w3-text-teal" id="Teacher">Herr Fuchs (Elon Musk)</h6>
+<video  src="\src/elon.mp4" width="500" controls></video>
+                <p>Elon Musk Song - Herr Fuchs (Elon Musk)</p>
+                <div class="w3-bar">
+                    <button class="w3-teal w3-button w3-small w3-round-xxlarge w3-border w3-border-blue w3-round-large"><a class="white" href="4.html">Watch on Shuut</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MAIN -->
+    </div>
+
+    <script>
+        // Get the Sidebar
+        var mySidebar = document.getElementById("mySidebar");
+
+
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+
+        // Toggle between showing and hiding the sidebar, and add overlay effect
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+                overlayBg.style.display = "none";
+            } else {
+                mySidebar.style.display = 'block';
+                overlayBg.style.display = "block";
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+            overlayBg.style.display = "none";
+        }
+
+        function limeTeacherSetName() {
+            document.getElementById("Teacher").innerHTML = "Teacher Name.";
+        }
+    </script>
+
+</body>
+
+</html>
